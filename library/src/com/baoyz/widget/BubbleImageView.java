@@ -18,6 +18,12 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.ImageView;
 
+/**
+ * 
+ * @author baoyz
+ * @date 2014-7-19
+ * 
+ */
 public class BubbleImageView extends ImageView {
 
 	private static final int LOCATION_LEFT = 0;
@@ -99,74 +105,39 @@ public class BubbleImageView extends ImageView {
 
 	public void rightPath(RectF rect, Path path) {
 		path.moveTo(mAngle, rect.top);
-		// 顶部线
 		path.lineTo(rect.width(), rect.top);
-
-		// 右上角
 		path.arcTo(new RectF(rect.right - mAngle * 2 - mArrowWidth, rect.top,
 				rect.right - mArrowWidth, mAngle * 2 + rect.top), 270, 90);
-
-		// 右部线
-		// path.lineTo(rect.width() + OFFSET - arrowWidth, rect.height() -
-		// OFFSET);
 		path.lineTo(rect.right - mArrowWidth, mArrowTop);
 		path.lineTo(rect.right, mArrowTop - mArrowOffset);
 		path.lineTo(rect.right - mArrowWidth, mArrowTop + mArrowHeight);
 		path.lineTo(rect.right - mArrowWidth, rect.height() - mAngle);
-
-		// 右下角
 		path.arcTo(new RectF(rect.right - mAngle * 2 - mArrowWidth, rect.bottom
 				- mAngle * 2, rect.right - mArrowWidth, rect.bottom), 0, 90);
-
-		// 底部线
 		path.lineTo(rect.left, rect.bottom);
-
-		// 左下角
 		path.arcTo(new RectF(rect.left, rect.bottom - mAngle * 2, mAngle * 2
 				+ rect.left, rect.bottom), 90, 90);
-
-		// 左部线
 		path.lineTo(rect.left, rect.top);
-
-		// 右上角
 		path.arcTo(new RectF(rect.left, rect.top, mAngle * 2 + rect.left,
 				mAngle * 2 + rect.top), 180, 90);
-
 		path.close();
 	}
 
 	public void leftPath(RectF rect, Path path) {
 		path.moveTo(mAngle + mArrowWidth, rect.top);
-		// 顶部线
 		path.lineTo(rect.width(), rect.top);
-
-		// 右上角
 		path.arcTo(new RectF(rect.right - mAngle * 2, rect.top, rect.right,
 				mAngle * 2 + rect.top), 270, 90);
-
-		// 右部线
 		path.lineTo(rect.right, rect.top);
-
-		// 右下角
 		path.arcTo(new RectF(rect.right - mAngle * 2, rect.bottom - mAngle * 2,
 				rect.right, rect.bottom), 0, 90);
-
-		// 底部线
 		path.lineTo(rect.left + mArrowWidth, rect.bottom);
-
-		// 左下角
 		path.arcTo(new RectF(rect.left + mArrowWidth, rect.bottom - mAngle * 2,
 				mAngle * 2 + rect.left + mArrowWidth, rect.bottom), 90, 90);
-
-		// 左部线
-		// path.lineTo(rect.left + arrowWidth, rect.top);
-
 		path.lineTo(rect.left + mArrowWidth, mArrowTop + mArrowHeight);
 		path.lineTo(rect.left, mArrowTop - mArrowOffset);
 		path.lineTo(rect.left + mArrowWidth, mArrowTop);
 		path.lineTo(rect.left + mArrowWidth, rect.top);
-
-		// 右上角
 		path.arcTo(new RectF(rect.left + mArrowWidth, rect.top, mAngle * 2
 				+ rect.left + mArrowWidth, mAngle * 2 + rect.top), 180, 90);
 
