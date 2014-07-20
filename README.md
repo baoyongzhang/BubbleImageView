@@ -15,8 +15,8 @@ Chat bubble ImageView.
 
 ```xml
 <com.baoyz.widget.BubbleImageView
-      android:layout_width="180dp"
-      android:layout_height="200dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
       android:padding="10dp"
       android:src="@drawable/pic"
       app:bubble_angle="20dp"
