@@ -3,65 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C0C0C0"
+    android:background="#888888"
     android:orientation="vertical"
     tools:context="${relativePackage}.${activityClass}" >
 
-    <LinearLayout
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:onClick="goSimple"
+        android:text="Simple Demo" />
 
-        <com.baoyz.widget.BubbleImageView
-            android:layout_width="120dp"
-            android:layout_height="200dp"
-            android:padding="10dp"
-            android:src="@drawable/pic" >
-        </com.baoyz.widget.BubbleImageView>
-
-        <com.baoyz.widget.BubbleImageView
-            android:layout_width="180dp"
-            android:layout_height="200dp"
-            android:padding="10dp"
-            android:src="@drawable/pic"
-            app:bubble_angle="20dp"
-            app:bubble_arrowHeight="50dp"
-            app:bubble_arrowLocation="right"
-            app:bubble_arrowOffset="10dp"
-            app:bubble_arrowTop="50dp"
-            app:bubble_arrowWidth="30dp" >
-        </com.baoyz.widget.BubbleImageView>
-    </LinearLayout>
-
-    <LinearLayout
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-
-        <com.baoyz.widget.BubbleImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:padding="10dp"
-            android:src="@drawable/pic"
-            app:bubble_angle="20dp"
-            app:bubble_arrowHeight="30dp"
-            app:bubble_arrowOffset="5dp"
-            app:bubble_arrowTop="30dp"
-            app:bubble_arrowWidth="20dp" >
-        </com.baoyz.widget.BubbleImageView>
-
-        <com.baoyz.widget.BubbleImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:padding="10dp"
-            android:src="@drawable/pic"
-            app:bubble_angle="30dp"
-            app:bubble_arrowHeight="35dp"
-            app:bubble_arrowLocation="right"
-            app:bubble_arrowOffset="-50dp"
-            app:bubble_arrowTop="50dp"
-            app:bubble_arrowWidth="20dp" >
-        </com.baoyz.widget.BubbleImageView>
-    </LinearLayout>
+        android:onClick="goChat"
+        android:text="Chat List Demo" />
 
 </LinearLayout>

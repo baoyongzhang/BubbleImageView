@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#888888"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.baoyz.widget.BubbleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/pic1" >
+        </com.baoyz.widget.BubbleImageView>
+
+        <com.baoyz.widget.BubbleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/pic2"
+            app:bubble_angle="20dp"
+            app:bubble_arrowHeight="50dp"
+            app:bubble_arrowLocation="right"
+            app:bubble_arrowOffset="10dp"
+            app:bubble_arrowTop="50dp"
+            app:bubble_arrowWidth="30dp" >
+        </com.baoyz.widget.BubbleImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.baoyz.widget.BubbleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/pic3"
+            app:bubble_angle="20dp"
+            app:bubble_arrowHeight="30dp"
+            app:bubble_arrowOffset="5dp"
+            app:bubble_arrowTop="30dp"
+            app:bubble_arrowWidth="20dp" >
+        </com.baoyz.widget.BubbleImageView>
+
+        <com.baoyz.widget.BubbleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/pic4"
+            app:bubble_angle="30dp"
+            app:bubble_arrowHeight="25dp"
+            app:bubble_arrowLocation="right"
+            app:bubble_arrowOffset="-50dp"
+            app:bubble_arrowTop="40dp"
+            app:bubble_arrowWidth="20dp" >
+        </com.baoyz.widget.BubbleImageView>
+    </LinearLayout>
+
+</LinearLayout>
